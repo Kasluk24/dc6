@@ -422,8 +422,11 @@
     <gear>
         <name>gear</name>
         <mode>in-transit</mode>
-        <path>Aircraft/dc3/Sounds/gear_move.wav</path>
+        <path>Aircraft/dc6/Sound/gear-down.wav</path>
         <property>gear/gear[0]/position-norm</property>
+        <volume>
+        	<factor>3</factor>
+        </volume>
         <pitch>
             <internal>dt_play</internal>
             <offset>1.0</offset>
@@ -440,13 +443,16 @@
 
     <gear>
         <name>gear-lock</name>
-        <path>Aircraft/dc3/Sounds/lock.wav</path>
+        <path>Aircraft/dc6/Sound/gear-lock.wav</path>
         <condition>
             <equals>
                 <property>gear/gear[0]/position-norm</property>
                 <value>0</value>
             </equals>
         </condition>
+        <volume>
+        	<factor>2</factor>
+        </volume>
         <position>
             <x>-9.0</x>
             <y>0</y>
@@ -496,10 +502,10 @@
     <flap>
         <name>flaps</name>
         <mode>in-transit</mode>
-        <path>Aircraft/dc3/Sounds/flap_move.wav</path>
+        <path>Aircraft/dc6/Sound/flaps-move.wav</path>
         <property>surface-positions/flap-pos-norm</property>
         <volume>
-            <factor>0.5</factor>
+            <factor>1.5</factor>
         </volume>
         <position>
             <x>-9.0</x>
@@ -535,6 +541,7 @@
         <max-dist>1.0</max-dist>
     </wind>
 
+<!--
     <stall>
         <name>stall</name>
         <path>Aircraft/dc3/Sounds/stall_horn.wav</path>
@@ -551,6 +558,7 @@
         <reference-dist>1.0</reference-dist>
         <max-dist>2.0</max-dist>
     </stall>
+-->
 
 <!-- no binding yet?
   <click>
