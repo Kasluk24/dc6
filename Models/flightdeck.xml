@@ -522,15 +522,8 @@
         <object-name>RHyoke.column</object-name>
         <property>controls/flight/elevator</property>
         <factor>10</factor>
-        <center>
-            <x-m>-9.541</x-m>
-            <y-m>0</y-m>
-            <z-m>0.267</z-m>
-        </center>
         <axis>
-            <x>0</x>
-            <y>-1</y>
-            <z>0</z>
+            <object-name>YokeColumns.axis</object-name>
         </axis>
     </animation>
 
@@ -538,7 +531,7 @@
         <type>rotate</type>
         <object-name>LHyoke</object-name>
         <property>controls/flight/aileron</property>
-        <factor>30</factor>
+        <factor>120</factor>
         <center>
             <x-m>-9.460</x-m>
             <y-m>-0.570</y-m>
@@ -555,7 +548,7 @@
         <type>rotate</type>
         <object-name>RHyoke</object-name>
         <property>controls/flight/aileron</property>
-        <factor>30</factor>
+        <factor>120</factor>
         <center>
             <x-m>-9.460</x-m>
             <y-m>0.570</y-m>
