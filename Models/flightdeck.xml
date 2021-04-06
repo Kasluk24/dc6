@@ -1061,6 +1061,79 @@
    			<z-m>0.300005</z-m>
   		</center>
 	</animation>
-
+	
+<!-- Elevator Trim -->
+	<animation>
+		<type>pick</type>
+		<object-name>ElevatorTrim</object-name>
+		<action>
+			<button>0</button>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>0.01</step>
+				<max>1</max>
+			</binding>
+		</action>
+		<action>
+			<button>1</button>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>-0.01</step>
+				<min>-1</min>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>ElevatorTrim</object-name>
+		<property>controls/flight/elevator-trim</property>
+		<factor>360</factor>
+		<axis>
+			<object-name>ElevatorTrim.axis</object-name>
+		</axis>
+	</animation>
+	
+<!-- Rudder Trim -->
+	<animation>
+		<type>pick</type>
+		<object-name>RudderTrim</object-name>
+		<action>
+			<button>0</button>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>0.01</step>
+				<max>1</max>
+			</binding>
+		</action>
+		<action>
+			<button>1</button>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>-0.01</step>
+				<min>-1</min>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>RudderTrim</object-name>
+		<property>controls/flight/rudder-trim</property>
+		<factor>360</factor>
+		<axis>
+			<object-name>RudderTrim.axis</object-name>
+		</axis>
+	</animation>
 
 </PropertyList>
