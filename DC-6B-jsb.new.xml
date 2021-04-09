@@ -694,7 +694,7 @@ L.E.MAC 163.6 in (4.15544 m)
     </function>
 
   <axis name="LIFT">
-
+    
     <function name="aero/coefficient/CLalpha">
       <description>Lift_due_to_alpha</description>
       <product>
@@ -704,10 +704,15 @@ L.E.MAC 163.6 in (4.15544 m)
           <table>
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
-              -0.20 -0.540
-               0.00 0.50
-             0.24    1.600
-               0.60 0.604
+              -0.200    -0.740
+               0.000     0.1
+               0.120     1.000
+               0.180     1.300
+               0.240     1.400
+               0.300     1.390
+               0.400     1.250
+               0.500     1.000
+               0.600     0.704
             </tableData>
           </table>
       </product>
@@ -746,11 +751,11 @@ L.E.MAC 163.6 in (4.15544 m)
           <table>
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
-             -1.57       1.400
-             -0.26    0.030
-              0.00    0.020
-              0.26    0.030
-              1.57       1.400
+             -1.57       1.500
+             -0.26       0.033
+              0.00       0.018
+              0.26       0.033
+              1.57       1.500
             </tableData>
           </table>
        </product>
@@ -762,7 +767,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.035</value>
+           <value>0.039</value>
          </product>
     </function>
 
@@ -775,7 +780,7 @@ L.E.MAC 163.6 in (4.15544 m)
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
                 0.00      0.000
-                0.7      0.000
+                0.7       0.000
                 1.10      0.023
                 1.80      0.015
             </tableData>
@@ -822,9 +827,9 @@ L.E.MAC 163.6 in (4.15544 m)
             <independentVar lookup="row">aero/beta-rad</independentVar>
             <tableData>
               -1.57       1.230
-              -0.26    0.050
+              -0.26       0.050
                0.00       0.000
-               0.26    0.050
+               0.26       0.050
                1.57       1.230
             </tableData>
           </table>
@@ -836,7 +841,7 @@ L.E.MAC 163.6 in (4.15544 m)
        <product>
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
-           <property>fcs/elevator-pos-norm</property>
+           <abs><property>fcs/elevator-pos-norm</property></abs>
            <value>0.04</value>
        </product>
     </function>
@@ -851,7 +856,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/beta-rad</property>
-           <value>-1</value>
+           <value>-0.5</value>
        </product>
     </function>
 
@@ -866,7 +871,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>aero/beta-rad</property>
-           <value>-0.1</value>
+           <value>-0.06</value>
        </product>
     </function>
 
@@ -878,7 +883,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/p-aero-rad_sec</property>
-           <value>-0.35</value>
+           <value>-0.4</value>
        </product>
     </function>
 
@@ -890,7 +895,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
-           <value>0.15</value>
+           <value>0.04</value>
        </product>
     </function>
 
@@ -904,7 +909,7 @@ L.E.MAC 163.6 in (4.15544 m)
           <table>
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
-              0.0    0.130
+              0.0    0.150
               2.0    0.050
             </tableData>
           </table>
@@ -914,11 +919,11 @@ L.E.MAC 163.6 in (4.15544 m)
     <function name="aero/coefficient/Cldr">
        <description>Roll_moment_due_to_rudder</description>
        <product>
-           <property>aero/qbar-psf</property>
+           <property>aero/thrust-qbar_psf</property>
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>0.01</value>
+           <value>0.03</value>
        </product>
     </function>
 
@@ -933,21 +938,21 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/Sw-sqft</property>
            <property>metrics/cbarw-ft</property>
            <property>aero/alpha-rad</property>
-           <value>-0.35</value>
+           <value>-1</value>
        </product>
     </function>
 
     <function name="aero/coefficient/Cmde">
        <description>Pitch_moment_due_to_elevator</description>
        <product>
-          <property>aero/qbar-psf</property>
+          <property>aero/thrust-qbar_psf</property>
           <property>metrics/Sw-sqft</property>
           <property>metrics/cbarw-ft</property>
           <property>fcs/elevator-pos-rad</property>
           <table>
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
-              0.0     -1.000
+              0.0     -1.5
               2.0     -0.250
             </tableData>
           </table>
@@ -962,7 +967,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/cbarw-ft</property>
            <property>aero/ci2vel</property>
            <property>velocities/q-aero-rad_sec</property>
-           <value>-20</value>
+           <value>-23</value>
        </product>
     </function>
 
@@ -974,7 +979,7 @@ L.E.MAC 163.6 in (4.15544 m)
            <property>metrics/cbarw-ft</property>
            <property>aero/ci2vel</property>
            <property>aero/alphadot-rad_sec</property>
-           <value>-6</value>
+           <value>-8</value>
        </product>
     </function>
 
@@ -1008,11 +1013,11 @@ L.E.MAC 163.6 in (4.15544 m)
     <function name="aero/coefficient/Cndr">
        <description>Yaw_moment_due_to_rudder</description>
        <product>
-           <property>aero/qbar-psf</property>
+           <property>aero/thrust-qbar_psf</property>
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>-0.1</value>
+           <value>-0.2</value> <!-- -0.15 -->
        </product>
     </function>
 
