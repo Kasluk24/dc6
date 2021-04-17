@@ -432,88 +432,90 @@
         </offsets>
     </model>
 
-<!-- OHead-->
-
+<!-- OHead -->
+	<!-- Fuel -->
+	<!-- Main 1 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge1.xml</path>
         <offsets>
-            <x-m>-9.599</x-m>
-            <y-m>-0.269</y-m>
-            <z-m>1.643</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.55613</x-m>
+            <y-m>-0.311622</y-m>
+            <z-m>1.65351</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Main 2 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge2.xml</path>
         <offsets>
-            <x-m>-9.599</x-m>
-            <y-m>-0.169</y-m>
-            <z-m>1.643</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.55613</x-m>
+            <y-m>-0.18703</y-m>
+            <z-m>1.65351</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Main 3 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge3.xml</path>
         <offsets>
-            <x-m>-9.599</x-m>
-            <y-m>-0.069</y-m>
-            <z-m>1.643</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.55613</x-m>
+            <y-m>-0.062437</y-m>
+            <z-m>1.65351</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Main 4 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge4.xml</path>
         <offsets>
-            <x-m>-9.599</x-m>
-            <y-m>0.031</y-m>
-            <z-m>1.643</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.55613</x-m>
+            <y-m>0.062156</y-m>
+            <z-m>1.65351</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Alt 1 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge5.xml</path>
         <offsets>
-            <x-m>-9.695</x-m>
-            <y-m>-0.269</y-m>
-            <z-m>1.576</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.64698</x-m>
+            <y-m>-0.298885</y-m>
+            <z-m>1.5953</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Alt 2 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge6.xml</path>
         <offsets>
-            <x-m>-9.695</x-m>
-            <y-m>-0.169</y-m>
-            <z-m>1.576</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.64698</x-m>
+            <y-m>-0.179366</y-m>
+            <z-m>1.5953</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Alt 3 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge7.xml</path>
         <offsets>
-            <x-m>-9.695</x-m>
-            <y-m>-0.069</y-m>
-            <z-m>1.576</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.64698</x-m>
+            <y-m>-0.059847</y-m>
+            <z-m>1.5953</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
-
+    <!-- Alt 4 -->
     <model>
         <path>Aircraft/dc6/Models/Instruments/fuelgauge8.xml</path>
         <offsets>
-            <x-m>-9.695</x-m>
-            <y-m>0.031</y-m>
-            <z-m>1.576</z-m>
-            <pitch-deg>55.0</pitch-deg>
+            <x-m>-9.64698</x-m>
+            <y-m>0.059673</y-m>
+            <z-m>1.5953</z-m>
+            <pitch-deg>57.4</pitch-deg>
         </offsets>
     </model>
 
+<!-- Yokes -->
     <animation>
         <type>rotate</type>
         <object-name>LHyoke</object-name>
@@ -596,7 +598,6 @@
     </animation>
 
 <!--   GEAR -->
-
    <animation>
         <type>select</type>
         <object-name>unsafe.on</object-name>
