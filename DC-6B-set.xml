@@ -20,7 +20,7 @@
         <model>
             <path>Aircraft/dc6/Models/DC-6B.xml</path>
             <livery>
-                <file type="string">PanAm</file>
+                <file type="string">PAA</file>
             </livery>
 
             <autostart type="bool">0</autostart>
