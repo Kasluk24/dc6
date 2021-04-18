@@ -647,6 +647,44 @@
             </equals>
         </condition>
     </animation>
+    
+	<!-- Steeringwheel -->
+	<!-- TODO: Add controls property for steering -->
+	<animation>
+		<type>pick</type>
+		<object-name>NosewheelSteer</object-name>
+		<action>
+			<button>0</button>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>gear/gear[0]/steering-norm</property>
+				<step>0.05</step>
+				<max>1</max>
+			</binding>
+		</action>
+		<action>
+			<button>1</button>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>gear/gear[0]/steering-norm</property>
+				<step>-0.05</step>
+				<min>-1</min>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>NosewheelSteer</object-name>
+		<property>gear/gear[0]/steering-norm</property>
+		<factor>360</factor>
+		<axis>
+			<object-name>NosewheelSteer.axis</object-name>
+		</axis>
+	</animation>
 
 <!--Panel Animations-->
 
